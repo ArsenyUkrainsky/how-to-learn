@@ -13,19 +13,77 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  align-items: center;
+/* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
 
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  z-index: -1;
+}
+
+* {
+  outline: solid 1px red;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  z-index: 1;
+  left: 64px;
+  top: 30px;
+}
+
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  text-align: left;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  z-index: 2;
+}
+
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  font-size: 18px;
+  line-height: 25px;
+  left: 64px;
+  bottom: 30px;
+  margin: 0px;
+  z-index: 2;
+}
+
+.header__img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
+.header__square-pic {
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  margin: 0px;
 }
