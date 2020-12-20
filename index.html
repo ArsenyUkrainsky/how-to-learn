@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Научиться учиться.Главные проблемы в обучении.Метод Фейнмана.Принципы обучения от Джоша Кауфмана.Яндекс Практикум.">
   <meta name="author" content="Арсений Украинский">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Научиться учиться</title>
 </head>
 <body>
-
   <div class="page">
-
     <header class="header">
-      <img class="logo logo_place_header" src="./images/logo/logo_place_header.svg" alt="Яндекс Практикум">
+      <div class="logo logo_place_header"></div>
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете
         использовать в своей жизни?
@@ -94,7 +93,7 @@
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a class="feynman__link" href="#">Подробнее&rarr;</a>
-        <img class="feynman__img">
+        <div class="feynman__img"></div>
       </section>
 
       <section class="kaufman">
@@ -150,11 +149,29 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__columns">
-        <div class="footer__columns_content_copyright"></div>
-        <div class="footer__columns_content_copyright"></div>
+      <div class="footer__columns"><!--Блок footer, элемент columns-->
+        <div class="footer__column footer__column_content_copyright"><!--Колонка__левая_отсюда--><!--Блок footer, элемент column, модификатор content со значением
+          copyright-->
+          <div class="logo logo_place_footer"></div><!--Блок logo, модификатор place со значением footer.-->
+          <p class="footer__author">&copy; 2020. Украинский Арсений</p><!--Блок footer, элемент author-->
+        </div>
+        <nav class="footer__column footer__column_content_info"><!--Колонка__правая_отсюда-->
+            <h3 class="footer__column-heading">О Практикуме</h3><!--Блок footer, элемент column-heading-->
+              <ul class="footer__column-links">
+                <li><a class="footer__column-link" href="#">Главная</a></li>
+                <li><a class="footer__column-link" href="#">Концепция</a></li>
+                <li><a class="footer__column-link" href="#">Наставники</a></li>
+              </ul>
+        </nav>
+        <nav class="footer__column footer__column_content_social">
+            <h3 class="footer__column-heading">Соцсети</h3>
+              <ul class="footer__column-links">
+                <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/color/facebook_color_white.svg" alt="Фейсбук">Facebook</a></li>
+                <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/color/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a></li>
+                <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/color/instagram_color_white.svg" alt="Инстраграм">Instagram</a></li>
+              </ul>
+        </nav>
       </div>
-
     </footer>
   </div>
 </body>
