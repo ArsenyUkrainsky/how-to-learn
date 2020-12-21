@@ -58,6 +58,14 @@
   z-index: 2;
 }
 
+/*Добавленный класс для задания стиля ссылки узнать в голове страницы*/
+.header__link {
+  color: #2f80ed;
+  line-height: 25px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
 .header__img {
   position: absolute;
   right: 0;
@@ -94,6 +102,7 @@
   line-height: 1.2;
   color: #2f80ed;
   margin: 0;
+  font-weight: normal; /*добавлено*/
 }
 
 .two-columns__main-text {
@@ -146,11 +155,16 @@
   font-size: 24px;
 }
 
+/*тут сделано немного лучше, чем было*/
+
 .table {
   width: 1100px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .table__cell {
@@ -158,7 +172,9 @@
   width: 250px;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .table__heading {
@@ -166,6 +182,7 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  padding-top: 60px;
 }
 
 .table__text {
@@ -178,7 +195,7 @@
 
 .feynman {
   margin: 0;
-  height: 790px;
+  min-height: 790px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,6 +299,7 @@ color: white;
   height: 877px;
   display: flex;
   margin: 0;
+  background-image: url(../images/kaufman-triangle/kaufman-triangle.svg); /*Это изображение неконтентное-перенесено из html сюда*/
 }
 
 /*Подвал страницы*/
@@ -310,9 +328,7 @@ color: white;
   margin: 0;
 }
 
-nav.footer__column_content_copyright {
-  flex-direction: row;
-}
+/*Убрано замечание: Нужно убрать селектор по тегу и вложенность, используйте классы.*/
 
 .logo_place_footer {
   background-image: url(../images/logo/logo_place_footer.svg);
@@ -335,7 +351,8 @@ nav.footer__column_content_copyright {
   margin: 0;
 }
 
-ul {
+/*Нужно было убрать селектор по тегу, -используйте классы!*/
+.footer__column-links {
   list-style: none;
 }
 
