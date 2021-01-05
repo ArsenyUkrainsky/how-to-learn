@@ -1,0 +1,7 @@
+/*Добавленный класс для задания стиля ссылки узнать в голове страницы*/
+.header__link {
+  color: #2f80ed;
+  line-height: 25px;
+  font-size: 18px;
+  text-decoration: none;
+}
