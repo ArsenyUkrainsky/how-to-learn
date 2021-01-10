@@ -15,7 +15,7 @@
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете
         использовать в своей жизни?
-        <a class="header__link" href="#">Узнать &rarr;</a> <!--добавить в css-->
+        <a class="header__link opacity-link" href="#">Узнать &rarr;</a> <!--добавить в css-->
       </p>
       <img class="header__img" src="./blocks/header/__img/header-image.png" alt="Опять двойка» — картина художника Фёдора Решетникова, созданная в 1952 году. Хранится в Третьяковской галерее.">
       <div class="header__square-pic rotation"></div>
@@ -83,10 +83,14 @@
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
           <iframe class="video__iframe"
-                  src="https://www.youtube.com/watch?v=arj7oStGLkU"
+                  width="515" height="316"
+                  src="https://www.youtube.com/embed/5MgBikgcWnY"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
           <iframe class="video__iframe"
-                  src="https://www.youtube.com/watch?v=5MgBikgcWnY"
+                  width="515" height="316"
+                  src="https://www.youtube.com/embed/arj7oStGLkU"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
         </div>
       </section>
@@ -110,7 +114,7 @@
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a class="feynman__link" href="#">Подробнее&rarr;</a>
+        <a class="feynman__link opacity-link" href="#">Подробнее&rarr;</a>
         <div class="feynman__img"></div>
       </section>
 
@@ -164,11 +168,11 @@
             Книгу «Весь мир — школа» нужно прочитать всем,
             кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания,
             которые приносят успех в школе, карьере и жизни.</blockquote>
-          <p class="khan__ quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
-            <img class="khan__book-pic" src="" alt="Салман Хан.Весь мир — школа.">
-            <a class="khan__buy-link" href="#">Купить книгу&rarr;</a>
+            <img class="khan__book-pic" src="./blocks/khan/__book-pic/khan-book.jpg" alt="Салман Хан.Весь мир — школа.">
+            <a class="khan__buy-link opacity-link" href="#">Купить книгу&rarr;</a>
           </div>
         </div>
 
@@ -218,7 +222,7 @@
             <div class="table__cell table__cell_theme_dark">
               <h3 class="table__heading table__heading_theme_dark">10</h3>
               <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
-              <div class="kaufman__triangle"></div>
+              <div class="kaufman__triangle rotation"></div>
             </div>
           </div>
       </section>
@@ -227,10 +231,10 @@
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <ul class="resources__logo-zone">
-          <li> <a class="" href="#"><img class="resources__logo" src="" alt="Арзама"></a></li>
-          <li> <a class="" href="#"><img class="resources__logo" src="" alt="Н+1"></a></li>
-          <li> <a class="" href="#"><img class="resources__logo" src="" alt="Стрелка"></a></li>
-          <li> <a class="" href="#"><img class="resources__logo" src="" alt="Полка"></a></li>
+          <li> <a class="opacity-link" href="#"><img class="resources__logo" src="./blocks/resources/__logo/resources-arzamas.svg" alt="Арзамаc"></a></li>
+          <li> <a class="opacity-link" href="#"><img class="resources__logo" src="./blocks/resources/__logo/resources-n1.svg" alt="Н+1"></a></li>
+          <li> <a class="opacity-link" href="#"><img class="resources__logo" src="./blocks/resources/__logo/resources-strelka.svg" alt="Стрелка"></a></li>
+          <li> <a class="opacity-link" href="#"><img class="resources__logo" src="./blocks/resources/__logo/resources-polka.svg" alt="Полка"></a></li>
         </ul>
       </section>
     </main>
@@ -245,17 +249,17 @@
         <nav class="footer__column footer__column_content_info"><!--Колонка__правая_отсюда-->
             <h3 class="footer__column-heading">О Практикуме</h3><!--Блок footer, элемент column-heading-->
               <ul class="footer__column-links">
-                <li><a class="footer__column-link" href="#">Главная</a></li>
-                <li><a class="footer__column-link" href="#">Концепция</a></li>
-                <li><a class="footer__column-link" href="#">Наставники</a></li>
+                <li><a class="footer__column-link opacity-link" href="#">Главная</a></li>
+                <li><a class="footer__column-link opacity-link" href="#">Концепция</a></li>
+                <li><a class="footer__column-link opacity-link" href="#">Наставники</a></li>
               </ul>
         </nav>
         <nav class="footer__column footer__column_content_social">
             <h3 class="footer__column-heading">Соцсети</h3>
               <ul class="footer__column-links">
-                <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/color/facebook_color_white.svg" alt="Фейсбук">Facebook</a></li>
-                <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/color/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a></li>
-                <li><a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/color/instagram_color_white.svg" alt="Инстраграм">Instagram</a></li>
+                <li><a class="footer__column-link opacity-link" href="#"><img class="footer__social-icon" src="./blocks/footer/__social-icon/facebook_color_white.svg" alt="Фейсбук">Facebook</a></li>
+                <li><a class="footer__column-link opacity-link" href="#"><img class="footer__social-icon" src="./blocks/footer/__social-icon/vk_color_white.svg" alt="ВКонтакте">ВКонтакте</a></li>
+                <li><a class="footer__column-link opacity-link" href="#"><img class="footer__social-icon" src="./blocks/footer/__social-icon/instagram_color_white.svg" alt="Инстраграм">Instagram</a></li>
               </ul>
         </nav>
       </div>
