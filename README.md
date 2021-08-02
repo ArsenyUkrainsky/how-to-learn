@@ -13,4 +13,4 @@
 * Разметка и вёрстка форм.
 * Работа с Git.
 
-:link: [Научиться учиться](https://arseniyukrainskiy.github.io/how-to-learn/ "Проект одностраничного сайта")
+:link: [Научиться учиться](https://arsenyukrainsky.github.io/how-to-learn/ "Проект одностраничного сайта")
